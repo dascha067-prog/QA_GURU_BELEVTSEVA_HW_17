@@ -12,7 +12,7 @@ class Product(BaseModel):
 
 
 class ProductPartial(BaseModel):
-    id: int
+    id: Optional[int] = None
     title: Optional[str] = None
     price: Optional[float] = None
     description: Optional[str] = None
